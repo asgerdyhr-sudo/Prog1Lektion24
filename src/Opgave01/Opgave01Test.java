@@ -5,7 +5,7 @@ public class Opgave01Test {
         int[] intArray = {2, 4, 16, 8, 10};
         boolean result = containsUnevenNumber(intArray);
         printResult(result);
-        int [] intArray2 = { 42, 67, 12, 103 };
+        int[] intArray2 = {42, 67, 12, 103};
         result = containsUnevenNumber(intArray2);
         printResult(result);
     }
@@ -19,6 +19,11 @@ public class Opgave01Test {
     }
 
     public static boolean containsUnevenNumber(int[] candidates) {
+        for (int candidate : candidates) {
+            if (candidate % 2 != 0) {
+                return true;
+            }
+        }
         return false;
     }
 }

@@ -21,7 +21,7 @@ public class IntSearch {
             int middle = (left + right) / 2;
             int k = arr[middle];
             if (k == target)
-                indeks = middle;
+                return target;
             else {
                 if (k > target)
                     right = middle - 1;

@@ -9,6 +9,12 @@ public class Spell {
         this.description = description;
     }
 
+    @Override
+    public String toString() {
+        return "|Spell name: " + name +
+                " | Description: " + description + "\n";
+    }
+
     public String getName() {
         return name;
     }

@@ -11,6 +11,14 @@ public class Car {
         this.topSpeed = topSpeed;
     }
 
+    @Override
+    public String toString() {
+        return "| Car |" + "\n" +
+                "| Brand: " + brand + " " +
+                "| Model: " + model + "\n" +
+                "| topSpeed: " + topSpeed + "\n";
+    }
+
     public String getBrand() {
         return brand;
     }
